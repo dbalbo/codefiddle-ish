@@ -17,3 +17,7 @@ $(".toggleButton").click(function() {
 	$(this).removeClass("highlightedButton");
 
 })
+
+
+// trying to get the textares to cover height of page, and the css isnt responding at the moemnt
+$(".panel").height($(window).height() - $("#topbar").height());

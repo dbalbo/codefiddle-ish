@@ -67,7 +67,21 @@ body{
 	background-color: yellow;
 }
 
+/*setting up each panel to be the height of the page and not have the resize thing on it
+*/
+textarea {
+	/*width:50%;
+	height:100%;*/
+	resize:none;
+	border-color: grey;
+}
 
+.panel {
+	float:left;
+	width:50%;
+	height:100%;
+	border-left:none;
+}
 
 
 
