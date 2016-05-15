@@ -26,7 +26,7 @@ $(".toggleButton").click(function() {
 // now i create a way to count the number of panels showing at any one time S.O. to the rescue
 	var numOfActivePanels = 4 - $('.hidden').length;
 
-	
+// same code to get width but with added var to divide all panels	
 	$(".panel").width(($(window).width() / numOfActivePanels ) - 6 );
 
 })
@@ -48,7 +48,15 @@ $(".panel").width(($(window).width() / 2 )- 7);
 
 
 $("textarea").on('change keyup paste', function() {
+ // will update in real time in all panels by creating an inline html page with calling up the values and evaluates all of the panels by their specific code
+	$("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+   	document.getElementById("outputPanel").contentWindow.eval($("#JSPanel").val());
 
-	$("iframe").contents().find("html").html($("#htmlPanel").val());
+
+
+
+                
+                
+                            
 
 });
