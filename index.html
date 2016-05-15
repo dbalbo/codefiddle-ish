@@ -29,7 +29,11 @@
 <!-- setting up a container for the panels will use all textareas and an iframe for the output -->
 		<div id="bodyContainer">
 
-			<textarea id="htmlPanel" class="panel"> Hello World! </textarea>
+			<textarea id="htmlPanel" class="panel"> <p>Hello World!</p> <p id="para2"></p></textarea>
+
+		<!-- 	setting up for the css and js panels-setting them to hidden at first putting minor examples of each style code to show up in panels -->
+			<textarea id="cssPanel" class="panel hidden"> p {color: red;} </textarea>
+			<textarea id="JSPanel" class="panel hidden"> document.getElementById("para2").innerHTML="Whats up?";/p> </textarea>
 
 			<iframe id="outputPanel" class="panel"></iframe>
 

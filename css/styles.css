@@ -89,7 +89,9 @@ iframe {
 }
 
 
-
+.hidden {
+	display:none;
+}
 
 
 

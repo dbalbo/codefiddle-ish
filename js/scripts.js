@@ -28,5 +28,12 @@ $('.panel').width($(window).width() / 2 - 15);
 
 
 // setting up iframe to display the html--thank god for Stack Overflow!
+// trying to bind it so it will update in real time
 
-$("iframe").contents().find('html').html("test html!");
+
+
+$("textarea").on('change keyup paste', function() {
+
+	$("iframe").contents().find("html").html($("#htmlPanel").val());
+
+});
