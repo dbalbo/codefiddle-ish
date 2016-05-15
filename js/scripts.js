@@ -19,9 +19,16 @@ $(".toggleButton").click(function() {
 // getting the id of button that was clicked to hide or show the panel by using the attr and setting it to a var
 	 var panelId = $(this).attr("id") + "Panel";
 
+
 // selecting the panels by their id to hide and show them	 
-	$("#" + panelId).toggleClass("hidden");	 
-now i 	
+	$("#" + panelId).toggleClass("hidden");	
+
+// now i create a way to count the number of panels showing at any one time S.O. to the rescue
+	var numOfActivePanels = 4 - $('.hidden').length;
+
+	
+	$(".panel").width(($(window).width() / numOfActivePanels ) - 6 );
+
 })
 
 
@@ -29,8 +36,10 @@ now i
 // any padding on the page so it will stay the entire height and not more--im still playing with those numbers
 $(".panel").height($(window).height() - $("#topbar").height());
 
+
 // getting the width of the iframe set up--same logic as above
-$('.panel').width($(window).width() / 2 )- 7);
+$(".panel").width(($(window).width() / 2 )- 7);
+
 
 
 // setting up iframe to display the html--thank god for Stack Overflow!

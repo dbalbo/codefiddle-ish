@@ -79,7 +79,7 @@ textarea {
 .panel {
 	float:left;
 	width:50%;
-
+	height:100%;
 	border-left:none;
 }
 
