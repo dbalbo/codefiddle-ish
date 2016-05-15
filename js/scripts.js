@@ -16,15 +16,21 @@ $(".toggleButton").click(function() {
 // makes sure that I can toggle the active and selected buttons
 	$(this).removeClass("highlightedButton");
 
+// getting the id of button that was clicked to hide or show the panel by using the attr and setting it to a var
+	 var panelId = $(this).attr("id") + "Panel";
+
+// selecting the panels by their id to hide and show them	 
+	$("#" + panelId).toggleClass("hidden");	 
+now i 	
 })
 
 
 // trying to get the textarea to cover height of page, and the css isnt responding at the moemnt--the -25 is to take away
 // any padding on the page so it will stay the entire height and not more--im still playing with those numbers
-$(".panel").height($(window).height() - $("#topbar").height() - 25);
+$(".panel").height($(window).height() - $("#topbar").height());
 
 // getting the width of the iframe set up--same logic as above
-$('.panel').width($(window).width() / 2 - 15);
+$('.panel').width($(window).width() / 2 )- 7);
 
 
 // setting up iframe to display the html--thank god for Stack Overflow!
