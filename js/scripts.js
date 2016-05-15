@@ -1,3 +1,12 @@
+// creating a function to have the updates load at the beginning of the page and also be able to be updated in real time
+function updateOutput() {
+
+	$("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+   	document.getElementById("outputPanel").contentWindow.eval($("#JSPanel").val());
+
+}
+
+
 // here is where I use jquery to toggle the buttons and have the active and selective ones be yellow
 
 $(".toggleButton").hover(function() {
@@ -40,7 +49,8 @@ $(".panel").height($(window).height() - $("#topbar").height());
 // getting the width of the iframe set up--same logic as above
 $(".panel").width(($(window).width() / 2 )- 7);
 
-
+// calling the function with the inline html page that updates everything on start of page and when updated in realtime
+updateOutput();
 
 // setting up iframe to display the html--thank god for Stack Overflow!
 // trying to bind it so it will update in real time
@@ -49,11 +59,9 @@ $(".panel").width(($(window).width() / 2 )- 7);
 
 $("textarea").on('change keyup paste', function() {
  // will update in real time in all panels by creating an inline html page with calling up the values and evaluates all of the panels by their specific code
-	$("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
-   	document.getElementById("outputPanel").contentWindow.eval($("#JSPanel").val());
+ // replacing long code with calling the function written at top
 
-
-
+updateOutput();
 
                 
                 
