@@ -1,73 +1,41 @@
-.container-fluid {
+
+body{
+	font-family: sans-serif;
+	padding:0;
+	margin:0;
+}
+
+
+
+
+#topBar{
 	background-color: #F6451A;
 	height:75px;
 }
 
-.navbar-brand {
-	margin-top: 5px;
-	font-weight: bold;
-	font-size: 28px;
+#logo{
+	float:left;
+	font-weight:bold;
+	font-size: 150%;
+	padding:5px 5px;
 }
 
-.nav-item {
-	 list-style-type: none;
-	 display:inline;
-	 vertical-align: middle;
-/*	 padding-left:150px;
-	 padding-bottom: 15px;*/
-
+#buttonContainer {
+	width:300px;
+	margin:0 auto;
 }
 
- .nav-link {
-	color: #000000;
-	/*margin-left: 1px;*/
-	/*padding-left: 130px;
-	margin-top: 20px;
-	float:left;*/
-
+.toggleButton {
+	float:left;
+	border:1px solid yellow;
+	padding:4px;
+	border-right:none;
 }
+
 	
 
-/*	border-style:solid;
-	border-color:#000000*/;
-	
 
- a {
-    display: inline-block;
-    height: 50px;
-    width: 20px;
-    line-height: 300px;
-    text-align: center;
-    box-shadow: inset 0px 6px 0px #777;    
-}
-a:hover, a:focus {
-    color: white;
-    background-color: #AAA;
-    box-shadow: inset 0px 6px 0px #000;
-}
-a.active, a.active:hover, a.active:focus {
-    color: white;
-    background-color: gray;
-    box-shadow: inset 0px 6px 0px #AAA;
-}
-/*
-#navButtons { 
-	text-align:center; 
-}
-#navButtons ul li.nav-list-item { 
-	float: none;
-}
-#navButtons ul {
- text-align:center; 
-}
-#navButtons ul li { 
-  text-align:center; 
-  display:inline; 
-}
-#navButtons li a { 
-	display: inline; 
-}
-*/
+
 
 
 

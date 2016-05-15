@@ -13,26 +13,24 @@
 
 	<body>
 		
-		<div class= "container-fluid">
-			<nav class="navbar navbar-light">
-				
-						 <a class="navbar-brand" href="#">CodeFiddle-ish</a>
-						<li class="nav-item">
-					     <a class="nav-link active" id="navButtons"href="#">HTML</a>
-					    </li>
-					    <li class="nav-item">
-					      <a class="nav-link" id="navButtons" href="#">CSS</a>
-					    </li>
-					    <li class="nav-item">
-					      <a class="nav-link" id="navButtons" href="#">JS</a>
-					    </li>
-					      <li class="nav-item">
-					      <a class="nav-link active" id="navButtons" href="#">OUTPUT</a>
-					    </li>
-					  </ul>
- 			
-			</nav>
-		<div>	
+		<div id="topBar">
+			<div id="logo">
+				CodeFiddle-ish
+			</div>
+			<div id="buttonContainer">
+
+				<div class="toggleButton active" id="html">HTML</div>
+				<div class="toggleButton" id="css">CSS</div>
+				<div class="toggleButton" id="JS">JS</div>
+				<div class="toggleButton active" id="output">OUTPUT</div>
+
+			</div>
+		</div>	
+
+		<div id="bodyContainer">
+			
+		</div>	
+
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
